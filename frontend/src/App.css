@@ -1,0 +1,12 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+.active{
+  background-color: rgba(243, 225, 192, 0.822) !important;
+  border-radius: 10px !important ;
+  font-weight: 600 !important;
+}
+div{
+  font-family: 'Kanit', sans-serif;
+}

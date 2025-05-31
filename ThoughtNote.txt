@@ -1,0 +1,8 @@
+Hi, i'm Kushal Himmatsinghka and this is my assignment no. 5 of Backend.
+
+It contains the frontend and backend of the SALES APP.
+It contains Registration, Login, Add Sales, Top 5 Sales for Today, Total revenue and Logout Page.
+Mongodb is used to store data.
+When a used is logged in, Registration and Login pages will be hidden.
+
+I enjoyed working on this assignment, Thankyou.
