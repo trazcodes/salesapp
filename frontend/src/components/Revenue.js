@@ -9,7 +9,7 @@ function Revenue() {
     const getData = async () => {
         // IF TOKEN FOUND, DISPLAY USER REVENUE BASED ON TOKEN
         if (token != null) {
-            const resp = await axios.get('http://localhost:5000/revenue', {
+            const resp = await axios.get(`${process.env.REACT_APP_API}/revenue`, {
                 headers: {
                     'Authorization': `Bearer ${token}`
                 }

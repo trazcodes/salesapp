@@ -20,7 +20,7 @@ function Register() {
     // CONCATENATING FIRST AND LAST NAME
     const name = `${firstname} ${lastname}`;
     try {
-      const resp = await axios.post('http://localhost:5000/signup', { name, email, password });
+      const resp = await axios.post(`${process.env.REACT_APP_API}/signup`, { name, email, password });
       // IF SUCCESS, REDIRECT TO LOGIN, ELSE SHOW ERROR
      
       if (resp.status === 200) {

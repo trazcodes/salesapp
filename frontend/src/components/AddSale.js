@@ -4,6 +4,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 
+
 function AddSale() {
 
     const [Pname, setPname] = useState('');
@@ -21,7 +22,7 @@ function AddSale() {
         // ==========================================
 
         // ADDING PRODUCT USING THE TOKEN
-        await axios.post('http://localhost:5000/addproduct',
+        await axios.post(`${process.env.REACT_APP_API}/addproduct`,
             { Pname, quantity, price },
             { headers: { 'Authorization': `Bearer ${token}` } }
         )

@@ -6,7 +6,7 @@ function TopSale() {
     const token = localStorage.getItem('token')
     const getSale = async () => {
         try {
-            const resp = await axios.get('http://localhost:5000/topsale', {
+            const resp = await axios.get(`${process.env.REACT_APP_API}/topsale`, {
                 headers: { 'Authorization': `Bearer ${token}` }
             }) 
             // STORING DATA IN TOPSALE ARRAY
